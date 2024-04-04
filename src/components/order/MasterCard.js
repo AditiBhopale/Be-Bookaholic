@@ -13,7 +13,7 @@ function MasterCard({ setCount }) {
     const [disable, setDisable] = useState(null);
     const [processing, setProcessing] = useState(false);
     const [seccess, setSucces] = useState(false);
-    const [clientSecret, setClientSecret] = useState(true);
+    const [clientSecret, setClientSecret] = useState("");
 
     useEffect(() => {
         // get the special stripe secret which helps us to charge a customer
